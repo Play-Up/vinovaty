@@ -1,0 +1,46 @@
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+
+  <div class="lang">ENG</div>
+
+  <div class="spacer"></div>
+  <a aria-label="On twitter" target="_blank" rel="noopener" href="https://twitter.com/" title="Twitter">
+    <svg id="twitter-logo" height="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+      <rect width="400" height="400" fill="none"/>
+      <path d="M153.62,301.59c94.34,0,145.94-78.16,145.94-145.94,0-2.22,0-4.43-.15-6.63A104.36,104.36,0,0,0,325,122.47a102.38,102.38,0,0,1-29.46,8.07,51.47,51.47,0,0,0,22.55-28.37,102.79,102.79,0,0,1-32.57,12.45,51.34,51.34,0,0,0-87.41,46.78A145.62,145.62,0,0,1,92.4,107.81a51.33,51.33,0,0,0,15.88,68.47A50.91,50.91,0,0,1,85,169.86c0,.21,0,.43,0,.65a51.31,51.31,0,0,0,41.15,50.28,51.21,51.21,0,0,1-23.16.88,51.35,51.35,0,0,0,47.92,35.62,102.92,102.92,0,0,1-63.7,22A104.41,104.41,0,0,1,75,278.55a145.21,145.21,0,0,0,78.62,23" fill="#fff"/>
+    </svg>
+  </a>
+  <a aria-label="On YouTube" target="_blank" rel="noopener" href="https://youtube.com/" title="YouTube">
+    <svg id="youtube-logo" height="24" width="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff">
+      <path d="M0 0h24v24H0V0z" fill="none"/>
+      <path d="M21.58 7.19c-.23-.86-.91-1.54-1.77-1.77C18.25 5 12 5 12 5s-6.25 0-7.81.42c-.86.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.86.91 1.54 1.77 1.77C5.75 19 12 19 12 19s6.25 0 7.81-.42c.86-.23 1.54-.91 1.77-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM10 15V9l5.2 3-5.2 3z"/>
+    </svg>
+  </a>
+</div>
+
+<div class="content" role="main">
+
+  <div class="desk">
+    Поиск лиц связанных со вторжением России на Украину в 2022 году
+  </div>
+
+  <div (click)="focusOnClick()" class="search-bar">
+    <svg (click)="focusOnClick()" class="search-bar-img" id="search" height="20" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5" fill="none" stroke="#b7b7b7"/><path d="M11,7.5A3.5,3.5,0,0,1,14.5,11" fill="none" stroke="#b7b7b7"/><line x1="20.4" y1="20.5" x2="15.5" y2="15.7" fill="none" stroke="#b7b7b7"/></svg>
+    <input (change)="search()" #input class="search-bar-input" type="text" placeholder="" [(ngModel)]="searchTerm">
+  </div>
+
+  <div class="hashtag-container">
+    <div class="hashtag">#политик</div>
+    <div class="hashtag">#пропагандист</div>
+    <div class="hashtag">#селебрити</div>
+    <div class="hashtag">#спортсмен</div>
+    <div class="hashtag">#бизнесмен</div>
+  </div>
+
+  <button (click)="search()" class="search-btn">Поиск</button>
+
+</div>
+
+<div class="footer">
+  <div class="footer-text">Условия использования</div>
+</div>
